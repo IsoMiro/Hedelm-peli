@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hedelmäpeli</title>
+</head>
+<body>
+    <h1>HEDELMÄPELI</h1>
+    <div class="header">
+        <br>
+    </div>
+    <div class="container">
+        <div class="upper-container">
+            <div class="option">
+                <div class="inline item1">Voitto: </div>
+                <div class="inline item2" id="raha">0</div>
+                <div class="inline item3">Panos: </div>
+                <div class="inline item4" id="panos">1</div>
+            </div>
+                
+            <div class="voittotaulu">
+                <div>
+                    <table id="voittotaulu1">
+                        <tr>
+                            <td class="taulukko"><img src="hedelmäkuvat/seven.png" width="50" height="50"><img src="hedelmäkuvat/seven.png" width="50" height="50"><img src="hedelmäkuvat/seven.png" width="50" height="50"><img src="hedelmäkuvat/seven.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" data-base-value="10">10</td>
+                            <td><img class="rahaKuva" src="hedelmäkuvat/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="taulukko"><img src="hedelmäkuvat/diamond.png" width="50" height="50"><img src="hedelmäkuvat/diamond.png" width="50" height="50"><img src="hedelmäkuvat/diamond.png" width="50" height="50"><img src="hedelmäkuvat/diamond.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" data-base-value="6">6</td>
+                            <td><img class="rahaKuva" src="hedelmäkuvat/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="taulukko"><img src="hedelmäkuvat/bar.png" width="50" height="50"><img src="hedelmäkuvat/bar.png" width="50" height="50"><img src="hedelmäkuvat/bar.png" width="50" height="50"><img src="hedelmäkuvat/bar.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" data-base-value="5">5</td>
+                            <td><img class="rahaKuva" src="hedelmäkuvat/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table id="voittotaulu2">
+                        <tr>
+                            <td class="taulukko"><img src="hedelmäkuvat/cherry.png" width="50" height="50"><img src="hedelmäkuvat/cherry.png" width="50" height="50"><img src="hedelmäkuvat/cherry.png" width="50" height="50"><img src="hedelmäkuvat/cherry.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" data-base-value="5">5</td>
+                            <td><img class="rahaKuva" src="hedelmäkuvat/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="taulukko"><img src="hedelmäkuvat/apple.png" width="50" height="50"><img src="hedelmäkuvat/apple.png" width="50" height="50"><img src="hedelmäkuvat/apple.png" width="50" height="50"><img src="hedelmäkuvat/apple.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" data-base-value="3">3</td>
+                            <td><img class="rahaKuva" src="hedelmäkuvat/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="taulukko"><img src="hedelmäkuvat/watermelon.png" width="50" height="50"><img src="hedelmäkuvat/watermelon.png" width="50" height="50"><img src="hedelmäkuvat/watermelon.png" width="50" height="50"><img src="hedelmäkuvat/watermelon.png" width="50" height="50"></td>
+                            <td class="taulukko arvo" data-base-value="5">5</td>
+                            <td><img class="rahaKuva" src="hedelmäkuvat/coin.png" alt="coin" width="30" height="30"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="slot-container">
+            <div class="ruutu"><img src="hedelmäkuvat/seven.png"></div>
+            <div class="ruutu"><img src="hedelmäkuvat/seven.png"></div>
+            <div class="ruutu"><img src="hedelmäkuvat/seven.png"></div>
+            <div class="ruutu"><img src="hedelmäkuvat/seven.png"></div>
+
+            <button class="lukitse" id="lukitse1" onclick="lukitse(0)">LUKITSE</button>
+            <button class="lukitse" id="lukitse2" onclick="lukitse(1)">LUKITSE</button>
+            <button class="lukitse" id="lukitse3" onclick="lukitse(2)">LUKITSE</button>
+            <button class="lukitse" id="lukitse4" onclick="lukitse(3)">LUKITSE</button>
+        </div>
+        
+        <div class="nappulat">
+            <button id="pelaa" onclick="pelaa()">PELAA</button>
+            <button id="panosNappi" onclick="panos()">PANOS</button>
+        </div>
+    </div>
+
+    <div id="voittoteksti"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

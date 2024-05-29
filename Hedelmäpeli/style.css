@@ -1,0 +1,192 @@
+@keyframes colorChange {
+    0% {
+      color: red;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: red;
+    }
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-image: url(pink.png);
+    background-color: rgb(6, 5, 5);
+    color: #d08fff;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .container {
+    
+    max-width: 200px;
+    min-width: fit-content;
+    margin: 100px;
+    padding: 10px;
+    display: grid;
+    gap: 15px;
+  }
+  .upper-container {
+    display: inline-flex;
+  }
+  .voittotaulu {
+    display: inline-flex;
+    background-color: #6bedaa;
+    color: #000000;
+    width: fit-content;
+    text-align: right;
+    font: 50px bold;
+    margin-left: auto;
+    border: 2px solid blueviolet;
+  }
+  
+  #voittotaulu1, #voittotaulu2 {
+    border-right: 2px solid rgb(78, 78, 199);
+  }
+  .arvo {
+    padding-left: 20px;
+  }
+  
+  .slot-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  
+  }
+  
+  .item2 {
+  width: 200px;
+  }
+  
+  .item4 {
+    align-items: flex-end;
+  }
+  .img {
+    height: 200px;
+    width: 200px;
+  }
+  .item3 {
+    width: 140px;
+  }
+  
+  .option {
+    color:rgb(239, 227, 227);
+    font: 50px verdana bold;
+    display: inline-flex;
+    align-items: flex-end;
+  }
+  
+  .ruutu {
+    display: flex;
+    background-color: rgb(62, 17, 73);
+    border: #f70707 5px solid;
+    height: 250px;
+    width: 250px;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  .lukitse {
+    color: black;
+    background-color: rgb(133, 9, 235);
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 400;
+  } 
+  h1{
+    font-size: 70px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #a053df;
+    animation: colorChange 2s infinite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans
+  }
+  p{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: absolute;
+    margin-top: 10px;
+    animation: bounce 2s infinite;
+  
+  }
+  .lukitse:hover {
+    background-color:#f9b2e3;
+    transition: 0.7s;
+  }
+  
+  .nappulat {
+    display: inline-flex;
+    height: 80px;
+  }
+  
+  #pelaa {
+    width: 70%;
+    background-color: #0972fc;
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    outline: 0;
+    text-align: auto;
+  }
+  
+  #pelaa:hover {
+    background-color:#f1ea0a;
+    color: #000000;
+  }
+  
+  #panosNappi {
+    width: 30%;
+    background-color: #22e9be;
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    outline: 0;
+    text-align: auto;
+  }
+  
+  #panosNappi:hover {
+    background-color:#2973d4;
+    color: #000000;
+  }
+  
+  .slotti {
+    display: none;
+    border: 2px solid #000000;
+    background-color: rgb(201, 225, 236);
+  }
+  
+  #voittoteksti {
+    visibility: hidden;
+    z-index: 1000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #00ff37;
+    padding: 10px;
+    background-color: rgb(247, 144, 10);
+    color: #000000;
+    font: 500% bolder;
+  }
+  
